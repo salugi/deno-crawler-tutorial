@@ -6,7 +6,7 @@ export class RelationalObject{
     meta_content:Array<string>;
     constructor(url:any) {
 
-        this.parent_base   = url.base|| (()=>{throw new Error("there is no parent link")}).call("");
+        this.parent_base   = url.base|| (()=>{throw new Error("there is parent base link")}).call("");
         this.parent_path   = url.path
         this.related_links = Array<any>();
         this.content="";
